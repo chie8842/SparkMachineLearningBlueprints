@@ -1,4 +1,4 @@
-### @Apache Spark Machine Learning Blueprint[test label0]
+### Apache Spark Machine Learning Blueprint
 
 Chapter.5 Risk Scoring on Spark
 
@@ -6,7 +6,7 @@ chie hayashida
 
 ---
 
-### @Agenda[test label]
+### Agenda
 
 * Introduction
 * Spark for risk scoring
@@ -31,14 +31,15 @@ chie hayashida
 @title[test label]
 ---
 
-### @math test[test label2]
+### math test
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
 $$\hat{r}_{ij} = {p_{i}}^{T}q_{j} = \sum_{k=1}^{k}p_{ik}q_{kj}$$
 
-@title2[test label2]
+@title[test label2]
 ---
-### [@]fin3[test label3]
+### fin3
 
-@title3[test label3]
+@title[custome label]
+
