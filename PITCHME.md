@@ -116,6 +116,31 @@ OSSであるApache Zeppelinがあげられる。
 ---?image=img/zeppelin_sample.png&size=auto 70%
 
 ---
+### Apache Spark notebooks(続き2)
+```
+しかしながら、Zeppelinは多くのコーディングとシステム設定及び
+Rを使うためにはRインタプリタも必要となる。
+```
+そんなに大変でもないけど。。。
+
+```
+Jupyter notebookでRを利用することもできる。
+```
+このへんを参考にしろと。
+* http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html
+
+* Jypter notebookのExample
+http://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/MLFH/CH2/ch2.ipynb
+
+---
+### Apache Spark notebooks(続き2)
+
+```
+JupyterもZeppelin同様多くのコーディングとシステム設定を必要とする。
+これらを防ぎたいようであればDatabricksの環境をつかうとよい。
+```
+
+---
 ### math test
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
