@@ -112,9 +112,8 @@ OSSであるApache Zeppelinがあげられる。
 このへんを参考にしろとのこと。
 * https://medium.com/sparkiq-labs
 * https://jp.hortonworks.com/blog/introduction-to-data-science-with-apache-spark/
----
-### Zeppelin Notebookのサンプル
-![zeppelin_sample](img/zeppelin_sample.png)
+
+---?image=img/zeppelin_sample.png&size=auto 70%
 
 ---
 ### math test
