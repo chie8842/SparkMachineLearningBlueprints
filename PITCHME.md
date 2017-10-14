@@ -127,10 +127,11 @@ Rを使うためにはRインタプリタも必要となる。
 Jupyter notebookでRを利用することもできる。
 ```
 このへんを参考にしろと。
-* http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html
+* Jupyter Notebookの使い方
+  * http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html
 
 * Jypter notebookのExample
-http://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/MLFH/CH2/ch2.ipynb
+  * http://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/MLFH/CH2/ch2.ipynb
 
 ---
 ### Apache Spark notebooks(続き2)
