@@ -114,7 +114,7 @@ OSSであるApache Zeppelinがあげられる。
 * https://jp.hortonworks.com/blog/introduction-to-data-science-with-apache-spark/
 ---
 ### Zeppelin Notebookのサンプル
-![zeppelin_sample](img/zeppelin_sample.png&size=auto 70%)
+![zeppelin_sample](img/zeppelin_sample.png)
 
 ---
 ### math test
