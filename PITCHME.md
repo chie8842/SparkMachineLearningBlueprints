@@ -98,7 +98,14 @@ Rのノートブックを簡単に作成できるため、Rからの動的な文
 Rユーザ向け・・・？
 
 ---
+### R markdownのページ
+http://rmarkdown.rstudio.com/index.html
+![Rmarkdown sample](img/rmarkdown_sample.png)
 
+---
+### Apache Spark notebooks(続き)
+```
+Apache sparkで利用できるnotebookの一つとして、OSSであるApache Zeppelinがあげられる。
 ---
 ### math test
 
