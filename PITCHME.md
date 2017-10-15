@@ -127,10 +127,11 @@ Rを使うためにはRインタプリタも必要となる。
 Jupyter notebookでRを利用することもできる。
 ```
 このへんを参考にしろと。
+
 * Jupyter Notebookの使い方
   * http://blog.revolutionanalytics.com/2015/09/using-r-with-jupyter-notebooks.html
 
-* Jypter notebookのExample
+* Jypter NotebookのExample
   * http://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/MLFH/CH2/ch2.ipynb
 
 ---
@@ -139,7 +140,55 @@ Jupyter notebookでRを利用することもできる。
 ```
 JupyterもZeppelin同様多くのコーディングとシステム設定を必要とする。
 これらを防ぎたいようであればDatabricksの環境をつかうとよい。
+
+Databricksに加えて、IBMのDataScientist Workbenchではいろんな便利なオプションがある
+DataScientistWorkbenchはApache Sparkがインストール済みで、
+data-cleaningシステムやOpenRefineの実装があり、前処理がかんたんにできる。
 ```
+---
+### Methods of risk scoring
+
+```
+環境準備が整ったはずなので、リスクモデルを機械学習手法にあてはめ、
+実際に分析手法や予測モデルを選択する。
+
+モデリングを行い、債務不履行を予測するため、ロジスティック回帰、決定木は
+最もよく利用される手法である。
+練習のために、両方とも試してみるが、ロジスティック回帰に焦点を当てる。
+なぜなら、決定木と組み合わせて開発することにより、他のほとんどの手法と比べて
+性能がよいからである。
+
+いつもどおり、分析手法やモデルを決定したら、コーディングの準備に入る。
+このChapterではRでかく。
+```
+
+う、R...
+
+---
+#### Logistic regression
+
+```
+ロジスティック回帰は、累積ロジスティック分布であるロジスティック関数を
+使用して確率を推定することによって、1つのカテゴリ依存変数と1つ以上の
+独立変数との間の関係を測定する。
+ロジスティック回帰は、一般化された線形モデル(GLM)の特殊なケースと
+みなすことができるので、線形回帰に類似している
+```
+
+---
+#### Logistic Regression(続き)
+
+```
+私たちは、この実際のユースケースのロジスティック回帰について、
+以前に言及したパフォーマンスの他に2つの理由から主に選択しました。
+* ロジスティック回帰はシンプルな計算とともに簡単に解釈される。
+* ほとんどの金融企業が過去にロジスティック回帰を実施してきた。
+  クライアントにとって、私達の結果とほか企業から過去に受け取った結果を
+  比較しやすい。
+```
+
+---
+#### Preparing coding in R
 
 ---
 ### math test
