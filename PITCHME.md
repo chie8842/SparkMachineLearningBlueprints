@@ -141,9 +141,10 @@ Jupyter notebookでRを利用することもできる。
 JupyterもZeppelin同様多くのコーディングとシステム設定を必要とする。
 これらを防ぎたいようであればDatabricksの環境をつかうとよい。
 
-Databricksに加えて、IBMのDataScientist Workbenchではいろんな便利なオプションがある
+Databricksに加えて、IBMのDataScientist Workbenchではいろんな便利な
+オプションがある。
 DataScientistWorkbenchはApache Sparkがインストール済みで、
-data-cleaningシステムやOpenRefineの実装があり、前処理がかんたんにできる。
+data-cleaningシステムやOpenRefineの実装があり、前処理が簡単にできる。
 ```
 ---
 ### Methods of risk scoring
@@ -155,8 +156,8 @@ data-cleaningシステムやOpenRefineの実装があり、前処理がかんた
 モデリングを行い、債務不履行を予測するため、ロジスティック回帰、決定木は
 最もよく利用される手法である。
 練習のために、両方とも試してみるが、ロジスティック回帰に焦点を当てる。
-なぜなら、決定木と組み合わせて開発することにより、他のほとんどの手法と比べて
-性能がよいからである。
+なぜなら、決定木と組み合わせて開発することにより、他のほとんどの手法と
+比べて性能がよいからである。
 
 いつもどおり、分析手法やモデルを決定したら、コーディングの準備に入る。
 このChapterではRでかく。
@@ -190,6 +191,32 @@ data-cleaningシステムやOpenRefineの実装があり、前処理がかんた
 ---
 #### Preparing coding in R
 
+```
+Rでは、ロジスティック回帰のいろんな書き方がある。
+前回のChapterでは、私達はR 分c地温glmを使ってこう書いた。
+
+  Model1 <-glm(good_bad ~.,data=train,family=binomial())
+
+一貫性を保つため、ここでglm関数を引き続き使用します。
+```
+
+Spark関係なくね。。。
+
+
+#### 補足
+
+Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
+2クラス及び他クラスロジスティック回帰の実装がある。
+
+正直SparkRは詳しくないので、Scala版のサンプルを載せておきます。
+（このあとも補足のコードは全部Scalaでかきます。）
+
+```
+
+```
+リスクスコアリングのデータセット
+* [Randall - Global Risk Score Dataset.xlsx](https://www.researchgate.net/publication/307638436_Randall_-_Global_Risk_Score_Dataset)
+* [Analysis of German Credit Data](https://onlinecourses.science.psu.edu/stat857/node/215)
 ---
 ### math test
 
