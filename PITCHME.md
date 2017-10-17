@@ -249,6 +249,53 @@ Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
 比較するために決定木を使用する
 ```
 ---
+
+#### Preparing coding
+
+```
+Rでは、Leo BreimanとAdele Cutlerが独自開発したRパッケージ
+randomForestを使用する必要がある。
+
+randomforestモデルの推定器を得るために、
+私達は学習データと2000のツリーを利用して、
+以下のようなR codeを利用する。
+```
+```
+library(randomForest)
+Model2 <- randomForest(default ~ ., data=train, importance=TRUE, ntree=2000))
+```
+---
+
+#### Preparing coding
+
+```
+モデル学習が終わったら、getTreeやimportanceで結果を取得できる。
+決定木のRによる実装方法はいくつかある。
+```
+```
+Model3 <- rpart(default ~ ., data=train)
+```
+
+---
+### Data and feature preparation
+
+```
+Chapter 2. Data Preparation for Spark MLのFeature extraction では、
+私たちは特徴量抽出の方法をいくつか復習し、Apache Sparkにおける
+実装について論じた。
+全ての技術について、このrisk scoringプロジェクトで使うことができる。
+```
+---
+### Data and feature preparation
+
+```
+先に言及したとおり、このプロジェクトにおける主な関心事は、
+ワークフローの再現性、及び場合によっては自動化を行うことである。
+データと機能の準備のためにOpenRefineを採用する。
+それが統合されたDataScientistWorkbench環境内でこのOpenRefineを使用する。
+```
+
+---
 ### math test
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
