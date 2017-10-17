@@ -218,6 +218,37 @@ Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
 * [Randall - Global Risk Score Dataset.xlsx](https://www.researchgate.net/publication/307638436_Randall_-_Global_Risk_Score_Dataset)
 * [Analysis of German Credit Data](https://onlinecourses.science.psu.edu/stat857/node/215)
 ---
+### Random forest and decision trees
+
+```
+ランダムフォレストは、分類とか行きにおけるアンサンブル学習の手法であり、
+学習時に数百かそれ以上の決定木をつくってその出力をあわせて
+最終的な予測を行う。
+
+ランダムフォレストは、その解釈が非常に直感的であり、
+通常ロジスティック回帰より少ない労力で良好な結果につながるため、
+非常に人気のある機械学習手法である。
+
+ランダムフォレストの実装はRやJavaや他の言語による多くあり、準備は比較的
+簡単である。
+```
+
+---
+
+### Random forest and decision trees
+
+```
+このプロジェクトの焦点はロジスティック回帰であるため、
+ランダムフォレストが、機能選択のためのロジスティック回帰を支援し、
+特徴量の重要性を計算するのに役立つ。
+
+前述したように、ロジスティック回帰と組み合わせた決定木は、
+しばしば良好な結果をもたらす。
+ここで決定木のモデリングを行い、クライアントにはルールベースの
+ソリューションをテストし、スコアベースのソリューションと
+比較するために決定木を使用する
+```
+---
 ### math test
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
