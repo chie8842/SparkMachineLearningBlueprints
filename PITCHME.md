@@ -472,7 +472,7 @@ max(attr(perf, 'y.values')[[1]]-attr(perf, 'x.values')[[1]]
 ```
 
 補足: PythonだとScipy.statsに実装がある。
-コロモゴロフ-スミノフ検定の仲間として、シャピロ-ウィルク検定や
+コロモゴロフ-スミノフ検定の他に、シャピロ-ウィルク検定や
 Hosmer-Lemeshow検定などもある。
 
 ---
