@@ -581,10 +581,9 @@ Spark以外のプラットフォームでも実行できる。
 ---
 #### Scoring
 
-$$
-\ln(\frac{P}{1-P})=a+bX
-\frac{P}{1-P}=e^{a+bX}
-P=\frac{e^{a+bX}}{1+e^{a+bX}}
+$$\ln(\frac{P}{1-P})=a+bX$$
+$$\frac{P}{1-P}=e^{a+bX}$$
+$$P=\frac{e^{a+bX}}{1+e^{a+bX}}
 $$
 ---
 #### Scoring
