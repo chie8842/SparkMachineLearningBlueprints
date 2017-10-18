@@ -344,6 +344,8 @@ Rユーザに人気のあるR Studioも、DataScientistWorkbenchで
 利用できる。
 ```
 ---
+![datascientistworkbench](img/datascientistworkbench.png)
+---
 
 #### The DataScientistWorkbench for R notebooks
 
@@ -414,8 +416,6 @@ model$confusion
 |Actual Default      | 89%                  | 11%                    |
 |Actual Not(Good)    | 12%                  | 88%                    |
 
----
-![datascientistworkbench](img/datascientistworkbench.png)
 ---
 ### math test
 
