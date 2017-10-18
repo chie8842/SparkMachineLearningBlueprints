@@ -204,13 +204,9 @@ Spark関係ない。。。
 
 
 #### 補足
-
 Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
 2クラス及び他クラスロジスティック回帰の実装がある。
 
-```
-
-```
 リスクスコアリングのデータセット
 * [Randall - Global Risk Score Dataset.xlsx](https://www.researchgate.net/publication/307638436_Randall_-_Global_Risk_Score_Dataset)
 * [Analysis of German Credit Data](https://onlinecourses.science.psu.edu/stat857/node/215)
