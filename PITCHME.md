@@ -344,6 +344,77 @@ Rユーザに人気のあるR Studioも、DataScientistWorkbenchで
 利用できる。
 ```
 ---
+
+#### The DataScientistWorkbench for R notebooks
+
+```
+ノートブックを起動するには、「Build Analytics」をクリックしてから
+「Notebook」をクリックするか、次のスクリーンショットにある
+「ノートブック」の青いボタンを直接クリックする。
+
+Rノートブックが開発されると、「Recent Notebooks」の下に表示され、
+他の環境と同様に結果を得るために実行することができる。
+```
+
+---
+### R notebooks implementation
+
+```
+モデル推定の主なタスクは、Data Scientist Workbench環境内で
+Rノートブックの実装をスケジュールすることである。
+これを行うには、前のセクションで開始したRノートブックを
+使用する必要があります。
+そのためには、以下のすべてのRコードを挿入する必要がある。
+```
+* Logistic Regression
+
+```
+Model1 <-glm(good_bad ~.,data=train, family=binomial())
+```
+* Random Forest
+
+```
+library(randomForest)
+randomForest(default ~ ., data=train, na.action=na.fail,
+importance=TRUE, ntree=2000)
+```
+* Decision Tree
+
+```
+f.est1 <- rpart(default ~ r1 + ... + r21, data=train, method="class")
+```
+---
+### Model evaluation
+
+```
+前のセクションで説明したようにモデル推定を完了した後、
+これらの推定モデルを評価してクライアントの基準に適合するかどうかを確認し、
+結果の説明に移動するか、前の段階に戻って予測モデルを改善する必要がある。
+
+モデル評価を行うために、このセクションでは、混同行列を使用して
+モデルの適合度を評価し、他の統計に展開します。
+
+いつものように、それらを計算するには、学習データではなく評価データを
+使用する必要がある。
+```
+---
+#### Confusion matrix
+
+```
+Rでは、次のコードでモデルのパフォーマンス指標を生成できます
+
+model$confusion
+
+切断点が決定されたあと、次の混同行列が生成される。
+良い結果が見られる。
+```
+
+|Model's Performance | Predicted as Default | Predicted as NOT(Good) |
+|--------------------|----------------------|------------------------|
+|Actual Default      | 89%                  | 11%                    |
+|Actual Not(Good)    | 12%                  | 88%                    |
+
+---
 ![datascientistworkbench](img/datascientistworkbench.png)
 ---
 ### math test
