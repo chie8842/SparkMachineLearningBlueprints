@@ -296,6 +296,56 @@ Chapter 2. Data Preparation for Spark MLのFeature extraction では、
 ```
 
 ---
+#### OpenRefine
+
+```
+OpenRefineは正式にはGoogle Refineといい、オープンソースの
+データクリーニングのアプリケーションである。
+OpenRefineを使用するにあたっては、以下のサイトに行く。
+https://datascientistworkbench.com
+```
+---
+![openrefine](img/openrefine.png)
+
+---
+#### OpenRefine
+
+```
+OpenRefineにデータセットをインポートして、プロジェクトを作成し、
+データクレンジングと前処理を行う。
+その後、前処理後のデータをエクスポートして、notebookに
+ドラッグアンドドロップでアップロードする。
+
+このプロジェクトでは、ID照合（照合）、重複の削除、
+およびデータセットのマージにOpenRefineを使用した。
+```
+---
+### Model estimation
+
+```
+このセクションでは、モデル評価を完了するために
+DataScientistWorkbench内のRノートブックを利用する方法と
+手順について説明する。
+```
+---
+#### The DataScientistWorkbench for R notebooks
+
+```
+OpenRefineを使用してデータを準備したら、
+"Methods for risk scoring"の節で準備したコードと
+「Data and feature preparation」の節で準備したコードを
+データに適用するRノートブックを開発する。
+
+次のスクリーンショットに示すように、
+DataScientistWorkbenchを使用すると、インタラクティブな
+Rノートブックを作成して実行し、共有することができる。
+
+Rユーザに人気のあるR Studioも、DataScientistWorkbenchで
+利用できる。
+```
+---
+![datascientistworkbench](img/datascientistworkbench.png)
+---
 ### math test
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
