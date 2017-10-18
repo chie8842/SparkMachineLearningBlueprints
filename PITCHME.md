@@ -193,21 +193,17 @@ data-cleaningシステムやOpenRefineの実装があり、前処理が簡単に
 
 ```
 Rでは、ロジスティック回帰のいろんな書き方がある。
-前回のChapterでは、私達はR 分c地温glmを使ってこう書いた。
+前章では、私達はRのglmを使ってこう書いた。
 
   Model1 <-glm(good_bad ~.,data=train,family=binomial())
 
-一貫性を保つため、ここでglm関数を引き続き使用します。
+一貫性を保つため、ここでglm関数を引き続き使用する。
 ```
 
-Spark関係ない。。。
-
-
-#### 補足
-Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
+補足1 Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
 2クラス及び他クラスロジスティック回帰の実装がある。
 
-リスクスコアリングのデータセット
+補足2 リスクスコアリングのデータセット
 * [Randall - Global Risk Score Dataset.xlsx](https://www.researchgate.net/publication/307638436_Randall_-_Global_Risk_Score_Dataset)
 * [Analysis of German Credit Data](https://onlinecourses.science.psu.edu/stat857/node/215)
 ---
