@@ -422,6 +422,8 @@ model$confusion
 ```
 ---
 #### 補足スライドかく
+メモ
+http://yamanchu.guhaw.com/machine_learning/evaluation_results
 ---
 #### ROC
 
@@ -640,6 +642,11 @@ DataScientistWorkbenchの完全な理解を得るでしょう。
 Apache SparkとDataScientistWorkbenchの詳細については、以下。
 ```
 http://www.db2dean.com/Previous/Spark1.html
+---
+### 感想
+
+この章の著者Spark使ってない。。。
+
 ---
 ### math test
 
