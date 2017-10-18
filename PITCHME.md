@@ -201,7 +201,7 @@ Rでは、ロジスティック回帰のいろんな書き方がある。
 ```
 
 補足1 Sparkでは、Scala, Java, Python,Rの4原語全てにおいて、
-2クラス及び他クラスロジスティック回帰の実装がある。
+2クラス及び多クラスロジスティック回帰の実装がある。
 
 補足2 リスクスコアリングのデータセット
 * [Randall - Global Risk Score Dataset.xlsx](https://www.researchgate.net/publication/307638436_Randall_-_Global_Risk_Score_Dataset)
