@@ -444,6 +444,7 @@ ROC曲線は混同行列よりも有益である。
 ROC曲線の下の面積は無価値のモデルを意味する。
 ```
 ![ROC curve](img/ROC.png)
+
 ---
 #### Rのコード
 ```
@@ -469,6 +470,10 @@ plot(perf)
 ```
 max(attr(perf, 'y.values')[[1]]-attr(perf, 'x.values')[[1]]
 ```
+
+補足: PythonだとScipy.statsに実装がある。
+コロモゴロフ-スミノフ検定の仲間として、シャピロ-ウィルク検定などもある。
+
 ---
 ### Kolmogorov-Smirnov
 
